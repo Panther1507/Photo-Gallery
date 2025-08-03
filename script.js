@@ -6,11 +6,11 @@ const mediaData = [
         return {
             id: photoNum,
             type: 'photo',
-            src: `photos/photo${photoNum}.jpg`, // Try JPG first
-            srcAlt: `photos/photo${photoNum}.png`, // Then PNG
-            srcAlt2: `photos/photo${photoNum}.jpeg`, // Then JPEG
-            srcAlt3: `photos/photo${photoNum}.HEIC`, // Then HEIC (won't work in browser but we'll try)
-            thumbnail: `photos/photo${photoNum}.jpg`
+            src: `photo${photoNum}.jpg`, // Try JPG first - REMOVED photos/ folder
+            srcAlt: `photo${photoNum}.png`, // Then PNG - REMOVED photos/ folder
+            srcAlt2: `photo${photoNum}.jpeg`, // Then JPEG - REMOVED photos/ folder
+            srcAlt3: `photo${photoNum}.HEIC`, // Then HEIC (won't work in browser but we'll try) - REMOVED photos/ folder
+            thumbnail: `photo${photoNum}.jpg` // REMOVED photos/ folder
         };
     }),
     
@@ -18,8 +18,8 @@ const mediaData = [
     ...Array.from({ length: 21 }, (_, i) => ({
         id: 238 + i,
         type: 'video',
-        src: `videos/video${i + 1}.mp4`,
-        thumbnail: `videos/video${i + 1}.mp4`
+        src: `video${i + 1}.mp4`, // REMOVED videos/ folder
+        thumbnail: `video${i + 1}.mp4` // REMOVED videos/ folder
     }))
 ];
 
